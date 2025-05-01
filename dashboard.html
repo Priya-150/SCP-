@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Parking Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="firebase.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="dashboard-container">
+    <header>
+      <h1>Smart Car Parking Dashboard</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <section class="status-section">
+      <h2>Available Parking Slots: <span id="freeSlots">0</span>/4</h2>
+    </section>
+
+    <section class="slots-grid">
+      <div class="slot" id="slot1">Slot 1</div>
+      <div class="slot" id="slot2">Slot 2</div>
+      <div class="slot" id="slot3">Slot 3</div>
+      <div class="slot" id="slot4">Slot 4</div>
+    </section>
+
+    <section class="log-section">
+      <h3>Gate Entry Logs</h3>
+      <ul id="entryLogs"></ul>
+    </section>
+  </div>
+</body>
+</html>
